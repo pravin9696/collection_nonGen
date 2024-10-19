@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using collection_nonGen.Assignment;
+using System.Collections;
 using System.Reflection.PortableExecutable;
 class comparebySalary : IComparer
 {
@@ -62,17 +63,17 @@ internal class Program
     }
     public static void StackDemo()
     {
-        Stack st1 = new Stack();
-        st1.Push(100);
-        st1.Push(200);
-        st1.Push(300);
+        //Stack st1 = new Stack();
+        //st1.Push(100);
+        //st1.Push(200);
+        //st1.Push(300);
 
-        var x = st1.Peek();//300
-        Console.WriteLine(x);
-        x = st1.Peek();//300
-        Console.WriteLine(x);
-        x = st1.Peek();//300
-        Console.WriteLine(x);
+        //var x = st1.Peek();//300
+        //Console.WriteLine(x);
+        //x = st1.Peek();//300
+        //Console.WriteLine(x);
+        //x = st1.Peek();//300
+        //Console.WriteLine(x);
 
         //foreach (var item in st1)
         //{
@@ -120,22 +121,42 @@ internal class Program
         //var t = sl1[11];
         ////DictionaryEntry d = (DictionaryEntry)t;
         //Console.WriteLine(t);
-        emp e1 = new emp() { id = 1, name = "abcd", salary = 5678 };
-        emp e2 = new emp() { id = 3, name = "xyz", salary = 1234 };
-        emp e3 = new emp() { id = 2, name = "pqr", salary = 9876 };
+        //emp e1 = new emp() { id = 1, name = "abcd", salary = 5678 };
+        //emp e2 = new emp() { id = 3, name = "xyz", salary = 1234 };
+        //emp e3 = new emp() { id = 2, name = "pqr", salary = 9876 };
 
-        SortedList EmpSortList = new SortedList();
-        EmpSortList.Add(e1, "emp1");
-        EmpSortList.Add(e2, "emp2");
-        EmpSortList.Add(e3, "emp3");
+        //SortedList EmpSortList = new SortedList();
+        //EmpSortList.Add(e1, "emp1");
+        //EmpSortList.Add(e2, "emp2");
+        //EmpSortList.Add(e3, "emp3");
 
-        foreach (var item in EmpSortList)
-        {
-            DictionaryEntry temp = (DictionaryEntry)item;
-            emp E = (emp)temp.Key;
-            Console.WriteLine(E.id+" "+E.name+" "+E.salary);
-        }
+        //foreach (var item in EmpSortList)
+        //{
+        //    DictionaryEntry temp = (DictionaryEntry)item;
+        //    emp E = (emp)temp.Key;
+        //    Console.WriteLine(E.id+" "+E.name+" "+E.salary);
+        //}
 
+        //  int[] arr = new int[5] { 11, 22, 33, 44, 55 };
+        //  List<int> intList = new List<int>();
+        //  for (int i = 0; i < arr.Length; i++)
+        //  {
+        //      intList.Add(arr[i]);
+        //  }
+        //  foreach (var item in intList)
+        //  {
+        //      Console.WriteLine(item);
+        //  }
+
+        //var x=  arr.ToList();
+        //  Console.WriteLine("================");
+        //  foreach (var item in x)
+        //  {
+        //      Console.WriteLine(item);
+        //  }
+
+        Assignment01 obj = new Assignment01();
+        obj.method2();
 
     }
 }
